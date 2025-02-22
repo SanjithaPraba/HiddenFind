@@ -4,27 +4,38 @@ function App() {
   // State for user inputs
   const [description, setDescription] = useState("");
   const [location, setLocation] = useState("");
-  const [radius, setRadius] = useState("");
+  // const [radius, setRadius] = useState("");
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
 
   // Placeholder function for backend API call
-  const handleSearch = (e) => {
+
+  // Function to send data to Flask backend
+  const handleSearch = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    // Simulating a backend response (Replace with actual API call)
-    setTimeout(() => {
-      setResults([
-        { name: "Cafe Delight", address: "123 Main St", rating: 4.5 },
-        { name: "Cozy Bookstore", address: "456 Elm St", rating: 4.8 },
-        { name: "Quiet Library", address: "789 Oak Ave", rating: 4.2 },
-        { name: "Sunny Park", address: "101 Pine Rd", rating: 4.9 },
-        { name: "Jazz Lounge", address: "202 Maple St", rating: 4.7 },
-      ]);
+    try {
+      const response = await fetch("http://localhost:5000/process", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          description,
+          location,
+        }),
+      });
+
+      const data = await response.json();
+      setResults(data.results); // Expecting an array from the backend
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    } finally {
       setLoading(false);
-    }, 1500); // Simulated delay
+    }
   };
+
 
   return (
     <div style={styles.container}>
@@ -46,13 +57,13 @@ function App() {
           onChange={(e) => setLocation(e.target.value)}
           style={styles.input}
         />
-        <input
+        {/* <input
           type="number"
           placeholder="Radius (miles)..."
           value={radius}
           onChange={(e) => setRadius(e.target.value)}
           style={styles.input}
-        />
+        /> */}
         <button type="submit" style={styles.button}>
           {loading ? "Searching..." : "Search"}
         </button>
