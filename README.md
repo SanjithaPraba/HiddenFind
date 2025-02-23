@@ -1,6 +1,10 @@
 # HiddenFind
 HiddenFind is uplifting small businesses in New York City by making them easier to find than ever before! NYC is constantly fighting against gentrification; with OG small businesses already not having a large online presence they can turn into hidden gems of the city that become harder and harder to find. **Use our Natural Language Processing powered search engine to search for small businesses in every category, including shopping, entertainment, museums, cuisine and much more.** 
 
+Checkout our demo!: https://www.youtube.com/watch?v=y8jJJD9m_ns&feature=youtu.be
+Authors: Sanjitha Prabakaran, Harshith Gowrisetty, Anjana Raman
+
+
 ## Technologies Used
 This application is built using the following technologies:
 
