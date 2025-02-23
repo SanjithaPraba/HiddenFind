@@ -5,6 +5,7 @@
 ```
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
+cd spot-match
 ```
 
 ### Install Frontend Dependencies 
@@ -19,12 +20,13 @@ npm start
 This will start the front-end server on http://localhost:3000/.
 
 ### Start the Flask Server 
+In another terminal start the flask server:
 ```
+cd back-end
 python generate_responses.py
 ```
 
 ### Run the React Application
-In antother terminal, start the front-end application:
 ```
 node app.js
 ```
