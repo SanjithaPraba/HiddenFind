@@ -6,11 +6,11 @@
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
 cd spot-match
-pip install -r requirements.txt (run this command to install the required dependencies)!
 ```
 
-### Install Frontend Dependencies 
+### Install Dependencies 
 ```
+pip install -r requirements.txt
 npm install
 ```
 
