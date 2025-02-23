@@ -1,13 +1,16 @@
 # SpotMatch 
-
+HiddenFind is uplifting small businesses in New York City by making them easier to find than ever before! NYC is constantly fighting against gentrification; with OG small businesses already not having a large online presence they can turn into hidden gems of the city that become harder and harder to find. **Use our Natural Language Processing powered search engine to search for small businesses in every category, including shopping, entertainment, museums, cuisine and much more.** 
 
 ## Technologies Used
 This application is built using the following technologies:
 
 - **React** – Front-end framework for building the user interface.
-- **Python** – Backend processing using Flask.
+- **Python** – Backend processing and machine learning scripts
 - **JavaScript** – Handles interactivity and API communication.
-- **HTML & CSS** – Structure and styling of the front-end.
+- **Flask** - API calls for connectivity
+- **BeautifulSoup** - Web Scraping Library
+- **SentenceTransformer** - Natural Language Processing
+- **SKLearn** - Natural Language Processing (Cosine Similarity)
 
 ## Prerequisites 
 Ensure you have the following installed on your system:
