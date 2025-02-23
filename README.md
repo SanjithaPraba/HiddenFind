@@ -1,5 +1,20 @@
 # SpotMatch 
 
+
+## Technologies Used
+This application is built using the following technologies:
+
+- **React** – Front-end framework for building the user interface.
+- **Python** – Backend processing using Flask.
+- **JavaScript** – Handles interactivity and API communication.
+- **HTML & CSS** – Structure and styling of the front-end.
+
+## Prerequisites 
+Ensure you have the following installed on your system:
+- **Node.js** – for running the React front-end
+- **Python 3** – for running the Flask back-end
+- **pip** - for installing Python dependencies
+
 ## Installation and Setup 
 ### Clone the Repo
 ```
