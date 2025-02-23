@@ -23,7 +23,6 @@ This will start the front-end server on http://localhost:3000/.
 ### Start the Flask Server 
 In another terminal start the flask server:
 ```
-cd back-end
 python generate_responses.py
 ```
 
